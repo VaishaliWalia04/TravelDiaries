@@ -59,6 +59,8 @@ app.get('/', (req, res) => {
     res.render('landing');
 });
 
-app.listen(3000, () => {
+const port = process.env.PORT || 3000
+
+app.listen(port, () => {
     console.log('Server started on 3000');
 });
